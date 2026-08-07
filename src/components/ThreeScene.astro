@@ -761,6 +761,7 @@ document.addEventListener('click', (e) => {
         const modalKey = link.dataset.modal;
         if (modalKey !== undefined) {
             e.preventDefault();
+            e.stopPropagation();
             closeModal();
             openModalByIdx(modalKey);
         }
@@ -789,7 +790,7 @@ document.addEventListener('click', (e) => {
             closeModal();
         }
     }
-});
+}, true);
 
 // Keyboard: Escape closes modal; arrows navigate slides
 document.addEventListener('keydown', (e) => {
