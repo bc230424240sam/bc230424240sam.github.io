@@ -437,7 +437,7 @@ function loadModel() {
         (xhr) => {
             const loadingEl = document.getElementById('loading');
             if (loadingEl && xhr.total) {
-                const pct = Math.round((xhr.loaded / xhr.total) * 100);
+                const pct = Math.min(100, Math.max(0, Math.round((xhr.loaded / xhr.total) * 100)));
                 loadingEl.textContent = 'Loading model... ' + pct + '%';
             }
         },
