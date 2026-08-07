@@ -119,28 +119,42 @@ if (!isTouchDevice) {
     let cx = window.innerWidth / 2, cy = window.innerHeight / 2;
     let ox = cx, oy = cy;
 
-    document.addEventListener('mousemove', (e) => {
+    window.addEventListener('mousemove', (e) => {
         cx = e.clientX;
         cy = e.clientY;
-    });
+    }, { passive: true });
+
+    // Hover effect on interactive elements
+    document.addEventListener('mouseover', (e) => {
+        const interactive = e.target.closest('a, button, .nav-link, .contact-btn, .story-item, .modal-close, .modal-panel, .blog-card');
+        const inner = document.querySelector('.cursor-inner');
+        const outer = document.querySelector('.cursor-outer');
+        if (interactive) {
+            if (inner) inner.classList.add('cursor-hover');
+            if (outer) outer.classList.add('cursor-hover');
+        } else {
+            if (inner) inner.classList.remove('cursor-hover');
+            if (outer) outer.classList.remove('cursor-hover');
+        }
+    }, { passive: true });
 
     function animateCursor() {
-        ox += (cx - ox) * 0.2;
-        oy += (cy - oy) * 0.2;
+        ox += (cx - ox) * 0.25;
+        oy += (cy - oy) * 0.25;
 
         const inner = document.querySelector('.cursor-inner');
         const outer = document.querySelector('.cursor-outer');
         
         if (inner) {
-            inner.style.transform = "translate3d(" + cx + "px, " + cy + "px, 0) translate(-50%, -50%)";
+            inner.style.transform = `translate3d(${cx}px, ${cy}px, 0) translate(-50%, -50%)`;
         }
         if (outer) {
-            outer.style.transform = "translate3d(" + ox + "px, " + oy + "px, 0) translate(-50%, -50%)";
+            outer.style.transform = `translate3d(${ox}px, ${oy}px, 0) translate(-50%, -50%)`;
         }
         
         requestAnimationFrame(animateCursor);
     }
     
-    // Start cursor animation
+    // Start cursor animation loop
     requestAnimationFrame(animateCursor);
 }

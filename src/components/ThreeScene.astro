@@ -742,12 +742,12 @@ function closeModal() {
 // ─── Event listeners ───
 window.addEventListener('resize', onWindowResize);
 
-document.addEventListener('mousemove', (e) => {
+window.addEventListener('mousemove', (e) => {
     cursorX = e.clientX;
     cursorY = e.clientY;
     targetMouseX = (e.clientX / window.innerWidth) * 2 - 1;
     targetMouseY = -(e.clientY / window.innerHeight) * 2 + 1;
-});
+}, { passive: true });
 
 document.addEventListener('mouseleave', () => {
     targetMouseX = 0;
