@@ -275,12 +275,12 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
   background: #00f0ff;
   box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
   border-radius: 50%;
-  pointer-events: none; z-index: 9999;
+  pointer-events: none; z-index: 100002;
 }
 .cursor-outer {
   position: fixed; top: 0; left: 0;
   width: 44px; height: 44px;
-  pointer-events: none; z-index: 9998;
+  pointer-events: none; z-index: 100001;
 }
 .cursor-outer::before, .cursor-outer::after {
   content: ''; position: absolute; inset: 0; border-radius: 50%;
