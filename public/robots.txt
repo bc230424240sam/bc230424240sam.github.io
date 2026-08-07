@@ -45,4 +45,3 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://hocien.me/sitemap-index.xml
-Sitemap: https://hocien.me/sitemap-0.xml
