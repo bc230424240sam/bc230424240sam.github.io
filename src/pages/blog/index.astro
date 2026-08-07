@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import { siteConfig } from '../../data/site';
+import { getExcerpt } from '../../utils/excerpt';
 
 const posts = await getCollection('blog');
 
@@ -38,7 +39,7 @@ const jsonLd = JSON.stringify({
       <a href={`/blog/${post.slug}/`} class="blog-card" data-category={post.data.category} aria-label={`Read article: ${post.data.title}`}>
         <div class="blog-meta">{post.data.category} · {post.data.readTime}</div>
         <h2 class="blog-title">{post.data.title}</h2>
-        <div class="blog-desc">{post.data.description}</div>
+        <div class="blog-desc">{getExcerpt(post)}</div>
         <div class="blog-readmore">Read Article</div>
       </a>
     ))}
