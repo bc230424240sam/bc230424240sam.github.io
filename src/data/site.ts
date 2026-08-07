@@ -193,7 +193,7 @@ export const pageLinks: PageLink[] = [
   { href: '/portfolio/', label: 'Portfolio' },
   { href: '/blog/', label: 'Blog' },
   { href: '/faq/', label: 'FAQ' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/contact/', label: 'Hire Me' },
 ];
 
-
+
