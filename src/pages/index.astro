@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ThreeScene from '../components/ThreeScene.astro';
+import { sections, siteConfig } from '../data/site';
+
+const personJsonLd = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shahid Hocien",
+    "jobTitle": "3D Website Developer | SEO Specialist | Full Stack Expert",
+    "url": "https://hocien.me/",
+    "email": siteConfig.email,
+    "telephone": siteConfig.phone,
+    "knowsAbout": ["3D WebGL", "Three.js", "WordPress", "Shopify", "Webflow", "Technical SEO", "Web Security", "React"],
+    "sameAs": Object.values(siteConfig.social)
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Shahid Hocien - 3D Website Developer",
+    "url": "https://hocien.me/",
+    "description": "Portfolio of Shahid Hocien, a Microsoft & Google Certified 3D Website Developer specializing in immersive WebGL experiences, WordPress, and Shopify.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hocien.me/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Shahid Hocien Web Development",
+    "image": "https://hocien.me/pic1.webp",
+    "url": "https://hocien.me/",
+    "telephone": siteConfig.phone,
+    "priceRange": "$$",
+    "description": "Expert 3D website development, WordPress, Shopify, and technical SEO services.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PK"
+    }
+  }
+]);
+---
+
+<BaseLayout jsonLd={personJsonLd}>
+  <link rel="preload" href="/compressed.glb" as="fetch" crossorigin="anonymous" slot="head" />
+
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-bg" tabindex="-1"></div>
+    <div class="modal-panel">
+      <span class="modal-corner-tl" aria-hidden="true"></span><span class="modal-corner-tr" aria-hidden="true"></span>
+      <span class="modal-corner-bl" aria-hidden="true"></span><span class="modal-corner-br" aria-hidden="true"></span>
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-tag" id="modal-tag"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-divider" aria-hidden="true"></div>
+        <div class="modal-desc" id="modal-desc"></div>
+        <div class="modal-divider" aria-hidden="true"></div>
+        <div class="modal-meta" id="modal-meta"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden modal presets (crawlable by search engines) -->
+  {sections.map((s, i) => (
+    <div class="modal-preset" id={`preset-${s.slug}`} data-tag={s.tag} data-title={s.title} data-meta={s.meta} style="display:none" aria-hidden="true" set:html={s.contentHtml}></div>
+  ))}
+
+
+
+  <div class="cinematic-container">
+    <header class="main-header" role="banner">
+      <div class="brand" aria-label="Shahid Hocien">Hocien</div>
+      <nav class="header-nav" id="mobile-menu" aria-label="Main navigation">
+        <a href="/about/" class="nav-link" data-modal="0" aria-label="About section">About</a>
+        <span class="nav-dot" aria-hidden="true"></span>
+        <a href="/experience/" class="nav-link" data-modal="1" aria-label="Experience section">Experience</a>
+        <span class="nav-dot" aria-hidden="true"></span>
+        <a href="/services/" class="nav-link" data-modal="2" aria-label="Services section">Services</a>
+        <span class="nav-dot" aria-hidden="true"></span>
+        <a href="/portfolio/" class="nav-link" data-modal="4" aria-label="Portfolio section">Portfolio</a>
+        <span class="nav-dot" aria-hidden="true"></span>
+        <a href="/blog/" class="nav-link" aria-label="Blog section">Blog</a>
+        <span class="nav-dot" aria-hidden="true"></span>
+        <a href="/faq/" class="nav-link" data-modal="faq" aria-label="FAQ section">FAQ</a>
+        <a href="/contact/" class="nav-link nav-contact" data-modal="3" aria-label="Contact me">Contact Me</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/contact/" class="contact-btn" data-modal="3" aria-label="Contact me">Contact Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="slides-container" id="main-content" role="main" tabindex="-1">
+      <div class="slide active" id="slide-1" aria-live="polite">
+        <h1 class="slide-title" tabindex="-1">Shahid <br>Hocien</h1>
+        <div class="desc-row">
+          <p class="slide-desc col-1">Microsoft & Google Certified Developer with 10+ years of experience. I design and develop on all major platforms — WordPress, WooCommerce, Shopify, Wix, Webflow, and eLearning platforms.</p>
+          <p class="slide-desc col-2">Custom themes, plugins, eCommerce stores, LMS platforms, and full website builds. Clean code, SEO best practices, security-first principles, and AI automation in every project.</p>
+        </div>
+      </div>
+      <div class="slide" id="slide-2" aria-live="polite">
+        <h2 class="slide-title" tabindex="-1">Code <br>& Craft</h2>
+        <p class="slide-desc">From custom WordPress themes to Shopify stores and Wix websites — every project is built with clean, scalable code, security-first practices, and performance baked in.</p>
+      </div>
+      <div class="slide" id="slide-3" aria-live="polite">
+        <h2 class="slide-title" tabindex="-1">Full-Stack <br>Services</h2>
+        <p class="slide-desc">Custom WordPress themes and WooCommerce stores, full Shopify builds, Wix and Webflow sites — plus API integrations, AI automation, speed optimization, malware removal, technical SEO, and ongoing maintenance. Every project is built clean, secure, and built to rank.</p>
+      </div>
+      <div class="slide" id="slide-4" aria-live="polite">
+        <h2 class="slide-title" tabindex="-1">Let's <br>Build</h2>
+        <p class="slide-desc">Looking for a dependable developer who delivers secure, high-quality websites with clear communication? Let's discuss your project — shahidhocien@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-image-mask" id="slide-2-img" aria-hidden="true">
+    <img src="/pic1.webp" alt="Editorial Concept - Shahid Hocien" width="400" height="400" loading="lazy" decoding="async" />
+  </div>
+
+  <div class="grid-horizontal-line" aria-hidden="true"></div>
+  <div class="grid-lines" aria-hidden="true">
+    {[0,1,2,3,4].map(i => (
+      <div class={`grid-line ${i === 4 ? 'story-progress-container' : ''}`}><div class="grid-dot top"></div><div class="grid-dot bottom"></div></div>
+    ))}
+  </div>
+
+  <div class="story-dashes" role="tablist" aria-label="Slide navigation">
+    <a href="#slide-1" class="story-item" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1: Intro"><span class="story-label">Intro</span><span class="story-dash"><span class="story-dash-fill" id="dash-fill-1"></span></span></a>
+    <a href="#slide-2" class="story-item" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2: Artistry"><span class="story-label">Artistry</span><span class="story-dash"><span class="story-dash-fill" id="dash-fill-2"></span></span></a>
+    <a href="#slide-3" class="story-item" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3: Solutions"><span class="story-label">Solutions</span><span class="story-dash"><span class="story-dash-fill" id="dash-fill-3"></span></span></a>
+    <a href="#slide-4" class="story-item" data-slide="3" role="tab" aria-selected="false" aria-label="Slide 4: Connect"><span class="story-label">Connect</span><span class="story-dash"><span class="story-dash-fill" id="dash-fill-4"></span></span></a>
+  </div>
+
+  <div class="footer-credit">Shahid Hocien — Full Stack WordPress | Shopify | Wix | Webflow Expert — All rights reserved &copy;</div>
+
+  <ThreeScene />
+</BaseLayout>
+

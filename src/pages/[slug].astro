@@ -1,0 +1,38 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import { sections, siteConfig } from '../data/site';
+
+export async function getStaticPaths() {
+  return sections.map((s) => ({
+    params: { slug: s.slug },
+    props: { section: s },
+  }));
+}
+
+const { section } = Astro.props;
+const url = `${siteConfig.url}/${section.slug}/`;
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Shahid Hocien",
+    "jobTitle": "Web Developer | SEO Specialist | WordPress | Shopify | Wix | Webflow Expert",
+    "url": url,
+    "email": siteConfig.email,
+    "telephone": siteConfig.phone,
+    "sameAs": Object.values(siteConfig.social),
+  },
+});
+---
+
+<ContentLayout
+  title={section.title}
+  description={section.description}
+  canonical={url}
+  tag={section.tag}
+  meta={section.meta}
+  jsonLd={jsonLd}
+>
+  <Fragment set:html={section.contentHtml} />
+</ContentLayout>

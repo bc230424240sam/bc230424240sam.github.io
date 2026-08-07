@@ -1,0 +1,48 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { siteConfig } from '../data/site';
+import PageLinks from '../components/PageLinks.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  tag: string;
+  meta: string;
+  type?: string;
+  image?: string;
+  jsonLd?: string;
+  backTo?: { href: string; label: string };
+  showShare?: boolean;
+}
+
+const { title, description, canonical, tag, meta, type = 'website', image, jsonLd = '', backTo = { href: '/', label: 'Back to Home' }, showShare = type === 'article' } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} canonical={canonical} type={type} image={image} jsonLd={jsonLd} bodyClass="page-body">
+  <header class="page-header" role="banner">
+    <a href="/" class="page-brand">Hocien</a>
+    <a href={backTo.href} class="page-back" aria-label={backTo.label}>← {backTo.label}</a>
+  </header>
+
+  <main class="page-panel" id="main-content" role="main" tabindex="-1">
+    <span class="modal-corner-tl" aria-hidden="true"></span>
+    <span class="modal-corner-tr" aria-hidden="true"></span>
+    <span class="modal-corner-bl" aria-hidden="true"></span>
+    <span class="modal-corner-br" aria-hidden="true"></span>
+    <div class="modal-tag" set:html={tag}></div>
+    <h1 class="page-title" set:html={title}></h1>
+    <div class="modal-divider" aria-hidden="true"></div>
+    <div class="page-desc">
+      <slot />
+    </div>
+    {showShare && <ShareButtons title={title} url={canonical} />}
+    <div class="modal-divider" aria-hidden="true"></div>
+    <div class="modal-meta" set:html={meta}></div>
+  </main>
+
+  <PageLinks currentPath={Astro.url.pathname} />
+
+  <footer class="page-footer">Shahid Hocien — Full Stack WordPress | Shopify | Wix | Webflow Expert — All rights reserved ©</footer>
+</BaseLayout>

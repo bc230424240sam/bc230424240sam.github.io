@@ -1,0 +1,170 @@
+---
+interface Props {
+  title: string;
+  url: string;
+}
+
+const { title, url } = Astro.props;
+
+const encodedTitle = encodeURIComponent(title);
+const encodedUrl = encodeURIComponent(url);
+
+const shareLinks = [
+  {
+    name: 'X',
+    label: 'Share on X (Twitter)',
+    href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+    icon: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`
+  },
+  {
+    name: 'LinkedIn',
+    label: 'Share on LinkedIn',
+    href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    icon: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.5a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>`
+  },
+  {
+    name: 'Facebook',
+    label: 'Share on Facebook',
+    href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    icon: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`
+  },
+  {
+    name: 'WhatsApp',
+    label: 'Share on WhatsApp',
+    href: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,
+    icon: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42 1.56 1.56 2.41 3.63 2.41 5.83 0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.188 8.188 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm-3.53 4.29c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44s1.02 2.83 1.16 3.02c.14.19 2.01 3.07 4.87 4.31.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.68-.69 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.34s-1.68-.83-1.94-.93c-.26-.1-.45-.14-.64.14-.19.28-.74.93-.91 1.12-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.16-.01-.35-.01-.54-.01z"/></svg>`
+  }
+];
+---
+
+<div class="share-container">
+  <span class="share-label">SHARE ARTICLE:</span>
+  <div class="share-buttons">
+    {shareLinks.map(link => (
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="share-btn"
+        aria-label={link.label}
+        title={link.label}
+        set:html={`${link.icon}<span class="share-btn-text">${link.name}</span>`}
+      />
+    ))}
+
+    <button
+      type="button"
+      class="share-btn copy-btn"
+      id="copyShareLink"
+      aria-label="Copy Article Link"
+      title="Copy Link"
+      data-url={url}
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+      </svg>
+      <span class="share-btn-text" id="copyBtnText">Copy Link</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  function setupCopyButton() {
+    const copyBtn = document.getElementById('copyShareLink');
+    const copyText = document.getElementById('copyBtnText');
+    if (!copyBtn || !copyText) return;
+
+    copyBtn.addEventListener('click', async () => {
+      const shareUrl = copyBtn.getAttribute('data-url') || window.location.href;
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        copyText.textContent = 'Copied!';
+        copyBtn.classList.add('copied');
+        setTimeout(() => {
+          copyText.textContent = 'Copy Link';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy: ', err);
+      }
+    });
+  }
+
+  // Support Astro View Transitions
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupCopyButton);
+  } else {
+    setupCopyButton();
+  }
+  document.addEventListener('astro:page-load', setupCopyButton);
+</script>
+
+<style>
+  .share-container {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(120, 200, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .share-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(120, 200, 255, 0.7);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(120, 200, 255, 0.2);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+  }
+
+  .share-btn:hover {
+    background: rgba(120, 200, 255, 0.15);
+    color: #7fd8ff;
+    border-color: #7fd8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(120, 200, 255, 0.15);
+  }
+
+  .share-btn.copied {
+    background: rgba(0, 240, 255, 0.2);
+    color: #00f0ff;
+    border-color: #00f0ff;
+  }
+
+  .share-btn-text {
+    font-size: 11px;
+  }
+
+  @media (max-width: 480px) {
+    .share-btn {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+  }
+</style>

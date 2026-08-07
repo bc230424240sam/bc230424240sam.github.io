@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import { siteConfig } from '../../data/site';
+
+const posts = await getCollection('blog');
+
+const allCategories = posts.flatMap(post => post.data.category.split('&').map(c => c.trim()));
+const categories = [...new Set(allCategories)].sort();
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Shahid Hocien Blog & Insights",
+  "url": siteConfig.url + "/blog/",
+  "author": { "@type": "Person", "name": "Shahid Hocien", "url": siteConfig.url + "/" },
+});
+---
+
+<ContentLayout
+  title="Blog & Insights"
+  description="Expert articles by Shahid Hocien on WordPress development, WooCommerce, Shopify, Wix, Webflow, SEO, website security, and web development best practices."
+  canonical={`${siteConfig.url}/blog/`}
+  tag="SYS // NODE 0x07"
+  meta={`${posts.length} ARTICLES · SECURITY · E-COMMERCE · SEO · HIRING`}
+  jsonLd={jsonLd}
+  backTo={{ href: '/', label: 'Back to Home' }}
+>
+  <div class="blog-filters">
+    <button class="blog-filter-btn active" data-filter="all">All</button>
+    {categories.map(cat => (
+      <button class="blog-filter-btn" data-filter={cat}>{cat}</button>
+    ))}
+  </div>
+
+  <div class="blog-grid" id="blogGrid">
+    {posts.map((post) => (
+      <a href={`/blog/${post.slug}/`} class="blog-card" data-category={post.data.category} aria-label={`Read article: ${post.data.title}`}>
+        <div class="blog-meta">{post.data.category} · {post.data.readTime}</div>
+        <h2 class="blog-title">{post.data.title}</h2>
+        <div class="blog-desc">{post.data.description}</div>
+        <div class="blog-readmore">Read Article</div>
+      </a>
+    ))}
+  </div>
+</ContentLayout>
+
+<script>
+  function setupBlogFilters() {
+    const buttons = document.querySelectorAll('.blog-filter-btn');
+    const cards = document.querySelectorAll('.blog-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        buttons.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const cardCats = card.getAttribute('data-category').split('&').map(c => c.trim());
+          if (filter === 'all' || cardCats.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', setupBlogFilters);
+</script>

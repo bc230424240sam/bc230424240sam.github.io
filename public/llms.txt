@@ -1,0 +1,74 @@
+# Shahid Hocien — Full Stack Web Developer & SEO Specialist
+
+> Microsoft & Google Certified Developer with 10+ years of experience building, optimizing, securing, and scaling websites across all major platforms — WordPress, WooCommerce, Shopify, Wix, Webflow, and eLearning platforms.
+
+## Who I Am
+
+- **Name:** Shahid Hocien
+- **Title:** Full Stack WordPress | Shopify | Wix | Webflow Expert
+- **Location:** Pakistan (working remotely worldwide)
+- **Email:** shahidhocien@gmail.com
+- **WhatsApp:** +92-313-3185033
+- **Years of Experience:** 10+
+- **Certifications:** Microsoft Certified Developer, Google Analytics IQ, Google Creative, Google Mobile Experience, Google Display & Video 360, HubSpot SEO
+
+## Services
+
+- Custom WordPress Theme & Plugin Development
+- WooCommerce Development & Optimization
+- Shopify Store Development & Customization
+- Wix Website Design & Development
+- Webflow Design & Development
+- Website Redesign & Migration
+- Elementor & Custom Theme Development
+- AI Automation & ChatGPT Integration
+- Website Speed Optimization (Core Web Vitals)
+- WordPress Malware Removal & Website Security
+- Technical SEO
+- API Integrations
+- Website Maintenance & Long-Term Support
+
+## Technologies
+
+WordPress, WooCommerce, Shopify, Wix, Webflow, Elementor, Laravel, PHP, MySQL, JavaScript, React, Vue.js, HTML5, CSS3, REST APIs, Git, AI Automation, Technical SEO, Server Management
+
+## Key Pages
+
+- Home: https://hocien.me/
+- About & Certifications: https://hocien.me/about.html
+- Work Experience: https://hocien.me/experience.html
+- Services: https://hocien.me/services.html
+- Portfolio (17 projects): https://hocien.me/portfolio.html
+- Contact: https://hocien.me/contact.html
+- FAQ: https://hocien.me/faq.html
+
+## Notable Projects
+
+- Islami Check (https://islamicheck.de) — Multi-vendor WooCommerce marketplace with Dokan, multi-currency support
+- Magic Sim (https://www.magic-sim.com) — Multilingual WooCommerce e-commerce with custom checkout
+- Riviera Events (https://rivieraevents.com) — Multilingual WordPress + WPML event management site
+- The People Vs Coffee (https://www.thepeoplevscoffee.com) — Webflow cafe website
+- Wix Online Shop (https://studiosteps.co) — Wix e-commerce with hero video header
+- Crimson Education (https://www.crimsoneducation.org) — WordPress education site
+- JH-Saikoku33 (https://jh-saikoku33.jp) — Japanese WordPress CMS with social auth
+
+## Work Experience
+
+- THQ Developers — WordPress Theme & Plugin Developer, SEO & Web Security Specialist (May 2023 — Present)
+- Multiply.io — E-learning Developer, Front End Developer, WordPress Developer (Oct 2022 — May 2023)
+- Softech Ireland Dublin Ltd — Expert WordPress Developer, Web Administrator (Aug 2021 — Oct 2022)
+- NME Construction Management — WordPress Developer & IT Support (Nov 2019 — Jul 2021)
+- Wodebox (China) — WordPress Developer (Jan 2016 — Oct 2019)
+- Matli Digital Software Production — WordPress & Magento Developer (Mar 2011 — Jan 2016)
+
+## Social Profiles
+
+- Facebook: https://www.facebook.com/Shahid.hussain.hashmi/
+- LinkedIn: https://www.linkedin.com/in/shahidhussain1/
+- Instagram: https://www.instagram.com/shahidhussain3345/
+- GitHub: https://github.com/imhocien
+- Upwork: https://upwork.com/freelancers/shahidh22
+
+## Download
+
+- Resume/CV: https://hocien.me/Shahid_Hocien_Resume_2026.pdf

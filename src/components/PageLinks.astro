@@ -1,0 +1,18 @@
+---
+import { pageLinks } from '../data/site';
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath } = Astro.props;
+---
+
+<nav class="page-links" aria-label="Related pages">
+  {pageLinks.map((link, index) => (
+    <>
+      <a href={link.href} class:list={['page-link', { active: currentPath === link.href }]}>{link.label}</a>
+      {index < pageLinks.length - 1 && <span class="page-link-sep" aria-hidden="true">·</span>}
+    </>
+  ))}
+</nav>

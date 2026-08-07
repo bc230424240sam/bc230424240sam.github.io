@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import { siteConfig } from '../../data/site';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const dateStr = entry.data.date ? entry.data.date.toISOString().split('T')[0] : "2026-08-03";
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": entry.data.title,
+  "description": entry.data.description,
+  "author": { "@type": "Person", "name": "Shahid Hocien", "url": siteConfig.url + "/" },
+  "publisher": { "@type": "Person", "name": "Shahid Hocien", "url": siteConfig.url + "/" },
+  "datePublished": dateStr,
+  "dateModified": dateStr,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteConfig.url}/blog/${entry.slug}/` },
+  "image": siteConfig.url + "/pic1.webp",
+});
+
+const tag = `SYS // ARTICLE · ${entry.data.category.toUpperCase()} · ${entry.data.readTime.toUpperCase()}`;
+const meta = `${entry.data.category.toUpperCase()} · ARTICLE`;
+---
+
+<ContentLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  canonical={`${siteConfig.url}/blog/${entry.slug}/`}
+  tag={tag}
+  meta={meta}
+  type="article"
+  image="/pic1.webp"
+  jsonLd={jsonLd}
+  backTo={{ href: '/blog/', label: 'Back to Blog' }}
+>
+  <Content />
+</ContentLayout>
