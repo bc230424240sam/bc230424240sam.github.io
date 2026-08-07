@@ -14,6 +14,6 @@ export default defineConfig({
     enabled: false
   },
   build: {
-    format: 'file'
+    format: 'directory'
   }
 });
