@@ -19,11 +19,13 @@ if (isTouchDevice) {
 
 // ─── Mobile Hamburger Menu ───
 function setupMobileMenu() {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('mobile-menu');
-    if (!hamburger || !menu) return;
+    if (window.__mobileMenuInitialized) return;
+    window.__mobileMenuInitialized = true;
 
     function openMenu() {
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('mobile-menu');
+        if (!hamburger || !menu) return;
         hamburger.classList.add('active');
         menu.classList.add('active');
         hamburger.setAttribute('aria-expanded', 'true');
@@ -32,6 +34,9 @@ function setupMobileMenu() {
     }
 
     function closeMenu() {
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('mobile-menu');
+        if (!hamburger || !menu) return;
         hamburger.classList.remove('active');
         menu.classList.remove('active');
         hamburger.setAttribute('aria-expanded', 'false');
@@ -39,22 +44,27 @@ function setupMobileMenu() {
         document.body.style.touchAction = '';
     }
 
-    hamburger.addEventListener('click', () => {
-        if (hamburger.classList.contains('active')) {
+    document.addEventListener('click', (e) => {
+        const hamburgerBtn = e.target.closest('#hamburger');
+        if (hamburgerBtn) {
+            e.stopPropagation();
+            if (hamburgerBtn.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+            return;
+        }
+
+        const navLink = e.target.closest('#mobile-menu .nav-link');
+        if (navLink) {
             closeMenu();
-        } else {
-            openMenu();
         }
     });
 
-    menu.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            closeMenu();
-        });
-    });
-
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && hamburger.classList.contains('active')) {
+        const hamburger = document.getElementById('hamburger');
+        if (e.key === 'Escape' && hamburger && hamburger.classList.contains('active')) {
             closeMenu();
         }
     });

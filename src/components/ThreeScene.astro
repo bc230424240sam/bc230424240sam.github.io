@@ -702,6 +702,13 @@ let lastFocusedElement = null;
 
 function openModalByIdx(key) {
     const modal = document.getElementById('modal');
+    const menu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger');
+    if (menu && hamburger) {
+        menu.classList.remove('active');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
     let preset = null;
     if (/^\d+$/.test(String(key))) {
         preset = document.querySelectorAll('.modal-preset')[parseInt(key, 10)] || null;

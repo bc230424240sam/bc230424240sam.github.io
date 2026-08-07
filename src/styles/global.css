@@ -60,7 +60,7 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
 /* ─── Sci-Fi Modal ─── */
 .modal-overlay {
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  z-index: 100; display: none;
+  z-index: 10000; display: none;
   align-items: center; justify-content: center;
   pointer-events: auto;
 }
@@ -339,7 +339,7 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
 .hamburger {
   display: none; flex-direction: column; justify-content: center; align-items: center;
   gap: 5px; width: 36px; height: 36px; padding: 6px; background: none; border: none;
-  cursor: none; z-index: 60; pointer-events: auto;
+  cursor: none; z-index: 9001; pointer-events: auto;
 }
 .hamburger-line {
   display: block; width: 22px; height: 1.5px;
@@ -524,7 +524,7 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column; align-items: center; justify-content: center;
-    gap: 28px; z-index: 9999;
+    gap: 28px; z-index: 9000;
     opacity: 0; visibility: hidden; pointer-events: none;
     transition: opacity 0.35s ease, visibility 0.35s ease;
   }
