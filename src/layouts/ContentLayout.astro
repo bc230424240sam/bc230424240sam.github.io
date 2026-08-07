@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import { siteConfig } from '../data/site';
 import PageLinks from '../components/PageLinks.astro';
 import ShareButtons from '../components/ShareButtons.astro';
+import ArticleCTA from '../components/ArticleCTA.astro';
 
 interface Props {
   title: string;
@@ -37,6 +38,7 @@ const { title, description, canonical, tag, meta, type = 'website', image, jsonL
     <div class="page-desc">
       <slot />
     </div>
+    {type === 'article' && <ArticleCTA />}
     {showShare && <ShareButtons title={title} url={canonical} />}
     <div class="modal-divider" aria-hidden="true"></div>
     <div class="modal-meta" set:html={meta}></div>

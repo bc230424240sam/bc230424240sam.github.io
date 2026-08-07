@@ -1,6 +1,6 @@
 ---
 title: "The Psychology of Color in Webflow and Wix Design"
-description: "In-depth guide on The Psychology of Color in Webflow and Wix Design covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Leverage color psychology in Webflow and Wix site design to influence user emotions, guide focus, and drive user action."
 category: "Wix & Webflow"
 readTime: "7 min read"
 date: "2026-08-07"

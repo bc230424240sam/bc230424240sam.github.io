@@ -1,6 +1,6 @@
 ---
 title: "Improving Cumulative Layout Shift (CLS) on Interactive Sites"
-description: "In-depth guide on Improving Cumulative Layout Shift (CLS) on Interactive Sites covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Diagnose and eliminate layout shifts (CLS) by reserving image aspect ratios, managing dynamic web fonts, and controlling DOM insertions."
 category: "Performance & Security"
 readTime: "5 min read"
 date: "2026-08-07"

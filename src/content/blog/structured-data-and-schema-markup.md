@@ -1,6 +1,6 @@
 ---
 title: "Structured Data and Schema Markup for Advanced SEO"
-description: "In-depth guide on Structured Data and Schema Markup for Advanced SEO covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Implement JSON-LD schema markup for products, FAQs, articles, and local business data to unlock rich search snippets."
 category: "Technical SEO"
 readTime: "5 min read"
 date: "2026-08-07"

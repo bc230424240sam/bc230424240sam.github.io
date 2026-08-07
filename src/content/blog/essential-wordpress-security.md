@@ -1,6 +1,6 @@
 ---
 title: "Essential WordPress Security Measures to Protect Your Site"
-description: "In-depth guide on Essential WordPress Security Measures to Protect Your Site covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Essential WordPress security hardening measures to protect your database, files, and user accounts from cyber threats."
 category: "WordPress"
 readTime: "4 min read"
 date: "2026-08-07"

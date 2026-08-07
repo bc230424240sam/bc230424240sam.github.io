@@ -1,6 +1,6 @@
 ---
 title: "Designing High-Converting Landing Pages on Wix"
-description: "In-depth guide on Designing High-Converting Landing Pages on Wix covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Design high-converting Wix landing pages with visual hierarchy, strategic CTA placement, and conversion rate optimization tactics."
 category: "Wix"
 readTime: "7 min read"
 date: "2026-08-07"

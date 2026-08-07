@@ -1,6 +1,6 @@
 ---
 title: "Secure Plugin Development Guidelines for WordPress"
-description: "In-depth guide on Secure Plugin Development Guidelines for WordPress covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Follow defensive coding guidelines when developing WordPress plugins: nonces, capability checks, input sanitization, and prepared SQL queries."
 category: "WordPress"
 readTime: "5 min read"
 date: "2026-08-07"

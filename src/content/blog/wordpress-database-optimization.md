@@ -1,6 +1,6 @@
 ---
 title: "WordPress Database Optimization for Faster Load Times"
-description: "In-depth guide on WordPress Database Optimization for Faster Load Times covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Clean up and optimize your WordPress MySQL database to delete overhead, clear revisions, speed up queries, and lower server load."
 category: "WordPress"
 readTime: "4 min read"
 date: "2026-08-07"

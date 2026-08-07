@@ -1,6 +1,6 @@
 ---
 title: "Shopify SEO Best Practices for Higher Rankings"
-description: "In-depth guide on Shopify SEO Best Practices for Higher Rankings covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Comprehensive guide to Shopify SEO: meta titles, collection hierarchies, product schema, and fixing duplicate tag page URLs."
 category: "Shopify"
 readTime: "4 min read"
 date: "2026-08-07"

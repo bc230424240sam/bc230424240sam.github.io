@@ -1,6 +1,6 @@
 ---
 title: "Creating Interactive 3D Portfolios That Stand Out"
-description: "In-depth guide on Creating Interactive 3D Portfolios That Stand Out covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Build immersive 3D developer and agency portfolio websites that capture attention, showcase work, and highlight technical mastery."
 category: "3D Web Development"
 readTime: "6 min read"
 date: "2026-08-07"

@@ -1,6 +1,6 @@
 ---
 title: "Essential SEO Strategies for Wix Websites"
-description: "In-depth guide on Essential SEO Strategies for Wix Websites covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Key SEO configurations for Wix sites: canonical URLs, structured data, page speed optimization, and Google Search Console setup."
 category: "Wix"
 readTime: "5 min read"
 date: "2026-08-07"

@@ -1,6 +1,6 @@
 ---
 title: "Site Speed and Core Web Vitals: A Technical Deep Dive"
-description: "In-depth guide on Site Speed and Core Web Vitals: A Technical Deep Dive covering best practices, strategies, and actionable advice for developers and businesses."
+description: "A technical deep dive into Core Web Vitals (LCP, INP, CLS) and step-by-step methods to achieve green performance scores."
 category: "Technical SEO"
 readTime: "6 min read"
 date: "2026-08-07"

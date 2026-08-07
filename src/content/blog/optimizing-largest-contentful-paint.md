@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Largest Contentful Paint (LCP) Effectively"
-description: "In-depth guide on Optimizing Largest Contentful Paint (LCP) Effectively covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Practical fixes to improve LCP: hero image preloading, critical CSS extraction, CDN caching, and server response time reduction."
 category: "Performance & Security"
 readTime: "5 min read"
 date: "2026-08-07"

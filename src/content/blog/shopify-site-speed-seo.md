@@ -1,6 +1,6 @@
 ---
 title: "Shopify Site Speed and SEO: Why Performance Matters"
-description: "In-depth guide on Shopify Site Speed and SEO: Why Performance Matters covering best practices, strategies, and actionable advice for developers and businesses."
+description: "How Shopify site speed directly impacts your search engine rankings and conversion rates—plus actionable optimization tips."
 category: "Shopify"
 readTime: "7 min read"
 date: "2026-08-07"

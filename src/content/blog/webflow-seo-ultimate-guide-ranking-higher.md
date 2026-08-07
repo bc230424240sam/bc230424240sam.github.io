@@ -1,6 +1,6 @@
 ---
 title: "Webflow SEO: The Ultimate Guide to Ranking Higher"
-description: "In-depth guide on Webflow SEO: The Ultimate Guide to Ranking Higher covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Step-by-step Webflow SEO guide covering page settings, auto-generated sitemaps, clean HTML output, and performance tuning."
 category: "Webflow"
 readTime: "5 min read"
 date: "2026-08-07"

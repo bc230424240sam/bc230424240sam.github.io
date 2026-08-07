@@ -1,6 +1,6 @@
 ---
 title: "Managing WordPress User Roles and Permissions Securely"
-description: "In-depth guide on Managing WordPress User Roles and Permissions Securely covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Enforce the principle of least privilege in WordPress by customizing user roles, capabilities, and access permissions safely."
 category: "WordPress"
 readTime: "6 min read"
 date: "2026-08-07"

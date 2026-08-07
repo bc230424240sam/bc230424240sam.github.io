@@ -1,6 +1,6 @@
 ---
 title: "WordPress Security Checklist: 10 Steps to Protect Your Website"
-description: "A practical 10-step WordPress security checklist to protect your website from malware, hackers, and vulnerabilities."
+description: "Complete WordPress security audit checklist to audit vulnerabilities, secure file permissions, and prevent malware infections."
 category: "Security"
 readTime: "5 min read"
 date: 2026-08-03

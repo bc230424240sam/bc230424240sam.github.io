@@ -1,6 +1,6 @@
 ---
 title: "Technical SEO Checklist for Shopify Developers"
-description: "In-depth guide on Technical SEO Checklist for Shopify Developers covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Technical SEO checklist for Shopify developers: robots.txt edits, sitemap management, canonical fixes, and fast liquid code."
 category: "Shopify"
 readTime: "6 min read"
 date: "2026-08-07"

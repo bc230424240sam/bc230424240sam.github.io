@@ -1,6 +1,6 @@
 ---
 title: "Mitigating Cross-Site Scripting (XSS) Vulnerabilities"
-description: "In-depth guide on Mitigating Cross-Site Scripting (XSS) Vulnerabilities covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Shield your web applications against stored, reflected, and DOM-based XSS attacks using strict sanitization and output encoding."
 category: "Performance & Security"
 readTime: "5 min read"
 date: "2026-08-07"

@@ -1,6 +1,6 @@
 ---
 title: "Local SEO Strategies for Shopify Store Owners"
-description: "In-depth guide on Local SEO Strategies for Shopify Store Owners covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Optimize your local brick-and-mortar or regional Shopify store to rank in Google Maps and local search results."
 category: "Shopify"
 readTime: "7 min read"
 date: "2026-08-07"

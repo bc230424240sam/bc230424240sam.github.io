@@ -1,6 +1,6 @@
 ---
 title: "Maximizing Conversion Rates on Your Wix Website"
-description: "In-depth guide on Maximizing Conversion Rates on Your Wix Website covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Practical CRO strategies to turn Wix website visitors into paying clients through smart layout adjustments and trust elements."
 category: "Wix"
 readTime: "4 min read"
 date: "2026-08-07"

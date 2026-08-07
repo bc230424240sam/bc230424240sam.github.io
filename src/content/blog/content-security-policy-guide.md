@@ -1,6 +1,6 @@
 ---
 title: "A Comprehensive Guide to Content Security Policy (CSP)"
-description: "In-depth guide on A Comprehensive Guide to Content Security Policy (CSP) covering best practices, strategies, and actionable advice for developers and businesses."
+description: "A practical guide to configuring Content Security Policy (CSP) headers to prevent XSS attacks and unauthorized script execution."
 category: "Performance & Security"
 readTime: "7 min read"
 date: "2026-08-07"

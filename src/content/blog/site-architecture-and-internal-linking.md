@@ -1,6 +1,6 @@
 ---
 title: "Site Architecture and Internal Linking Best Practices"
-description: "In-depth guide on Site Architecture and Internal Linking Best Practices covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Design logical site structures and siloing strategies with internal links to distribute page authority and guide crawlers."
 category: "Technical SEO"
 readTime: "6 min read"
 date: "2026-08-07"

@@ -1,6 +1,6 @@
 ---
 title: "Understanding Core Web Vitals for Web Developers"
-description: "In-depth guide on Understanding Core Web Vitals for Web Developers covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Clear explanation of Google's Core Web Vitals metrics, how they are measured in the field, and why they matter for search visibility."
 category: "Performance & Security"
 readTime: "7 min read"
 date: "2026-08-07"

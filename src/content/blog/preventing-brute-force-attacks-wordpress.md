@@ -1,6 +1,6 @@
 ---
 title: "Preventing Brute Force Attacks on Your WordPress Website"
-description: "In-depth guide on Preventing Brute Force Attacks on Your WordPress Website covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Block automated bot attacks on WordPress login pages using rate limiting, two-factor authentication (2FA), and custom login paths."
 category: "WordPress"
 readTime: "6 min read"
 date: "2026-08-07"

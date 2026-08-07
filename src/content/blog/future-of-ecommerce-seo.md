@@ -1,6 +1,6 @@
 ---
 title: "The Future of E-commerce SEO and AI Search"
-description: "In-depth guide on The Future of E-commerce SEO and AI Search covering best practices, strategies, and actionable advice for developers and businesses."
+description: "How AI-driven search models, voice queries, and semantic search are reshaping e-commerce SEO strategies for the future."
 category: "E-Commerce"
 readTime: "5 min read"
 date: "2026-08-07"

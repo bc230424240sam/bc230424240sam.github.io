@@ -1,6 +1,6 @@
 ---
 title: "Mastering First Input Delay (FID) and Interaction to Next Paint (INP)"
-description: "In-depth guide on Mastering First Input Delay (FID) and Interaction to Next Paint (INP) covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Optimize Interaction to Next Paint (INP) and First Input Delay (FID) by breaking up long main-thread tasks and deferring heavy scripts."
 category: "Performance & Security"
 readTime: "7 min read"
 date: "2026-08-07"

@@ -1,6 +1,6 @@
 ---
 title: "WordPress Performance Optimization: Speed Up Your Site"
-description: "In-depth guide on WordPress Performance Optimization: Speed Up Your Site covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Comprehensive guide to speeding up WordPress with caching plugins, object caching (Redis/Memcached), script deferral, and CDN integration."
 category: "WordPress"
 readTime: "7 min read"
 date: "2026-08-07"

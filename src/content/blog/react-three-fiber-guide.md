@@ -1,6 +1,6 @@
 ---
 title: "How to Add 3D Models to Your React App with React Three Fiber"
-description: "In-depth guide on How to Add 3D Models to Your React App with React Three Fiber covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Integrate 3D graphics seamlessly into React applications using React Three Fiber, declarative components, and hooks."
 category: "3D Web Development"
 readTime: "6 min read"
 date: "2026-08-07"

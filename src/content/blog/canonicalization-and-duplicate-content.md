@@ -1,6 +1,6 @@
 ---
 title: "Canonicalization and Handling Duplicate Content"
-description: "In-depth guide on Canonicalization and Handling Duplicate Content covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Understand canonical tags and best practices for eliminating duplicate content issues to protect your search engine rankings."
 category: "Technical SEO"
 readTime: "4 min read"
 date: "2026-08-07"

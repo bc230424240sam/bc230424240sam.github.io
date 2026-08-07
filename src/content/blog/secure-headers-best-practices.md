@@ -1,6 +1,6 @@
 ---
 title: "Secure Headers Best Practices for Web Security"
-description: "In-depth guide on Secure Headers Best Practices for Web Security covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Configure essential HTTP security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy) to harden web server defense."
 category: "Performance & Security"
 readTime: "4 min read"
 date: "2026-08-07"

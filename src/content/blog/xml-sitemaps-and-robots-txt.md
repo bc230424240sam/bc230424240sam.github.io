@@ -1,6 +1,6 @@
 ---
 title: "XML Sitemaps and Robots.txt Configuration Guide"
-description: "In-depth guide on XML Sitemaps and Robots.txt Configuration Guide covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Configure XML sitemaps and directives in robots.txt to guide search engine crawlers to your valuable content efficiently."
 category: "Technical SEO"
 readTime: "5 min read"
 date: "2026-08-07"

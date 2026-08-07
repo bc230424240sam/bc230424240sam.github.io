@@ -1,6 +1,6 @@
 ---
 title: "Top Plugins and Integrations to Boost Wix Conversions"
-description: "In-depth guide on Top Plugins and Integrations to Boost Wix Conversions covering best practices, strategies, and actionable advice for developers and businesses."
+description: "The best Wix integrations and app plugins for lead capture, live chat, email marketing automation, and sales conversions."
 category: "Wix"
 readTime: "5 min read"
 date: "2026-08-07"

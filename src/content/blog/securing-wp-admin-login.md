@@ -1,6 +1,6 @@
 ---
 title: "Securing the WP Admin Login Page from Hackers"
-description: "In-depth guide on Securing the WP Admin Login Page from Hackers covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Protect your WordPress dashboard from unauthorized access by hiding wp-admin, enforcing strong passwords, and restricting IP ranges."
 category: "WordPress"
 readTime: "5 min read"
 date: "2026-08-07"

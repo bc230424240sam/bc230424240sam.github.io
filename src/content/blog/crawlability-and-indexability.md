@@ -1,6 +1,6 @@
 ---
 title: "Crawlability and Indexability: Ensuring Google Sees Your Site"
-description: "In-depth guide on Crawlability and Indexability: Ensuring Google Sees Your Site covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Ensure search engines index your critical pages efficiently with proper crawl budget management and indexability fixes."
 category: "Technical SEO"
 readTime: "5 min read"
 date: "2026-08-07"

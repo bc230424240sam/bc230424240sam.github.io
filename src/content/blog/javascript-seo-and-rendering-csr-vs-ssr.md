@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SEO: Rendering CSR vs SSR for Search Engines"
-description: "In-depth guide on JavaScript SEO: Rendering CSR vs SSR for Search Engines covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Compare client-side rendering (CSR) vs server-side rendering (SSR) and learn how search engines execute and index JavaScript frameworks."
 category: "Technical SEO"
 readTime: "5 min read"
 date: "2026-08-07"

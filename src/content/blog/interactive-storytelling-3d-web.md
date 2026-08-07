@@ -1,6 +1,6 @@
 ---
 title: "Interactive Storytelling with 3D Web Development"
-description: "In-depth guide on Interactive Storytelling with 3D Web Development covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Craft compelling scrollytelling experiences using 3D web graphics, scroll-driven animations, and interactive camera movements."
 category: "3D Web Development"
 readTime: "7 min read"
 date: "2026-08-07"

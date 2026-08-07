@@ -1,6 +1,6 @@
 ---
 title: "HTTPS and Website Security as a Ranking Factor"
-description: "In-depth guide on HTTPS and Website Security as a Ranking Factor covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Why SSL/TLS encryption is essential for search engine rankings, user trust, and protecting browser-to-server data transmission."
 category: "Technical SEO"
 readTime: "7 min read"
 date: "2026-08-07"

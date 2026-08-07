@@ -1,6 +1,6 @@
 ---
 title: "A Beginners Guide to Shaders in WebGL"
-description: "In-depth guide on A Beginners Guide to Shaders in WebGL covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Master GLSL fundamentals, vertex and fragment shaders, and learn how to render dynamic visual effects in WebGL from scratch."
 category: "3D Web Development"
 readTime: "7 min read"
 date: "2026-08-07"

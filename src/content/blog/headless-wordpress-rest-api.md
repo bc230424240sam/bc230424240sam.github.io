@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Headless WordPress and the REST API"
-description: "In-depth guide on Getting Started with Headless WordPress and the REST API covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Build decoupled frontend applications powered by WordPress REST API and modern JavaScript frameworks like Astro and React."
 category: "WordPress"
 readTime: "6 min read"
 date: "2026-08-07"

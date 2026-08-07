@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate Guide to Getting Started with Three.js"
-description: "In-depth guide on The Ultimate Guide to Getting Started with Three.js covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Learn how to build interactive 3D web scenes using Three.js, including cameras, light sources, geometries, and materials."
 category: "3D Web Development"
 readTime: "6 min read"
 date: "2026-08-07"

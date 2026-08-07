@@ -1,6 +1,6 @@
 ---
 title: "Wix vs Webflow: A Comparison for Small Businesses"
-description: "In-depth guide on Wix vs Webflow: A Comparison for Small Businesses covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Side-by-side comparison of Wix vs Webflow for business websites: design flexibility, SEO tools, learning curve, and pricing."
 category: "Wix & Webflow"
 readTime: "4 min read"
 date: "2026-08-07"

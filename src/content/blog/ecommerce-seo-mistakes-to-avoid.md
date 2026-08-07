@@ -1,6 +1,6 @@
 ---
 title: "Top E-commerce SEO Mistakes to Avoid"
-description: "In-depth guide on Top E-commerce SEO Mistakes to Avoid covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Avoid common e-commerce SEO traps like thin product descriptions, broken faceted navigation, and poor URL structures."
 category: "E-Commerce"
 readTime: "6 min read"
 date: "2026-08-07"

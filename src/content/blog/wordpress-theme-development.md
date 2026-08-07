@@ -1,6 +1,6 @@
 ---
 title: "The Complete Guide to WordPress Theme Development"
-description: "In-depth guide on The Complete Guide to WordPress Theme Development covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Learn modern WordPress theme development: theme.json, template hierarchy, block patterns, and responsive CSS architecture."
 category: "WordPress"
 readTime: "7 min read"
 date: "2026-08-07"

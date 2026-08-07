@@ -1,6 +1,6 @@
 ---
 title: "E-commerce Keyword Research: Find What Your Customers Search"
-description: "In-depth guide on E-commerce Keyword Research: Find What Your Customers Search covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Uncover high-intent transactional search terms and buyer search queries to optimize product pages and collection categories."
 category: "E-Commerce"
 readTime: "4 min read"
 date: "2026-08-07"

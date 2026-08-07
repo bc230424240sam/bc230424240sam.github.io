@@ -1,6 +1,6 @@
 ---
 title: "Optimizing 3D Web Performance: Best Practices"
-description: "In-depth guide on Optimizing 3D Web Performance: Best Practices covering best practices, strategies, and actionable advice for developers and businesses."
+description: "Maximize WebGL frame rates and reduce memory usage through geometry instancing, texture compression, and level-of-detail management."
 category: "3D Web Development"
 readTime: "4 min read"
 date: "2026-08-07"
