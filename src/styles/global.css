@@ -788,13 +788,6 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
   color: #cbd5e1;
 }
 .cta-feature-icon { font-size: 14px; }
-.article-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
 .cta-primary-btn {
   display: inline-flex;
   align-items: center;
@@ -821,20 +814,44 @@ a:focus-visible, button:focus-visible, .story-item:focus-visible, [tabindex="0"]
   background: transparent;
   color: #eaf6ff !important;
   font-family: 'Outfit', sans-serif;
-  .grid-lines { left: 12px; right: 12px; width: calc(100% - 24px); }
-  .story-dashes { right: 6px; gap: 8px; }
-  .story-dash { height: 24px; }
-  .story-label { font-size: 9px; letter-spacing: 0.5px; }
-  .modal-panel { padding: 22px 14px 20px; }
-  .modal-title { font-size: 20px; }
-  .modal-desc { font-size: 12px; }
-  .footer-credit { right: 8px; bottom: 12px; font-size: 6px; letter-spacing: 0.5px; max-width: calc(100% - 60px); }
-  .brand { font-size: 10px; letter-spacing: 2px; }
-  .contact-btn { padding: 6px 12px; font-size: 8px; }
-  #slide-1 .col-1, #slide-1 .col-2 { width: calc(100% - 36px); max-width: calc(100% - 36px); }
-  #slide-2 .slide-title, #slide-2 .slide-desc { padding-right: 36px; width: calc(100% - 36px); max-width: calc(100% - 36px); }
-  #slide-3, #slide-4 { width: calc(100% - 36px); max-width: calc(100% - 36px); }
+  font-size: 14px;
+  font-weight: 400;
+  padding: 11px 20px;
+  border: 1px solid rgba(120, 200, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+.cta-secondary-btn:hover {
+  background: rgba(120, 200, 255, 0.1);
+  border-color: #7fd8ff;
+}
+.article-cta-direct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #64748b;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.cta-contact-link {
+  color: #7fd8ff !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cta-contact-link:hover { text-decoration: underline; color: #b3e7ff !important; }
+.cta-sep { color: #334155; }
+
+@media (max-width: 640px) {
+  .article-cta-box { padding: 24px 18px; }
+  .article-cta-title { font-size: 19px; }
+  .article-cta-desc { font-size: 13px; }
+  .article-cta-features { flex-direction: column; gap: 10px; }
+  .cta-primary-btn, .cta-secondary-btn { width: 100%; justify-content: center; }
+}
+
 /* --- Advanced FAQ Accordion --- */
 .faq-container { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
 .faq-details {
